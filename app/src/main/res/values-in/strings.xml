@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="error">Kesalahan</string>
+    <string name="save">Simpan</string>
+    <string name="empty">Kosong</string>
+    <string name="scoreboard">Papan Skor:</string>
+    <string name="player1">Pemain1</string>
+    <string name="player2">Pemain2</string>
+    <string name="score">Skor:</string>
+    <string name="duel_score">%s skor: %d\n%s skor: %d</string>
+    <string name="scoreboard_format">%d. %s</string>
+    <string name="nick_empty">Nickname tidak boleh kosong!</string>
+    <string name="fragment_settings_select_language">Pilih Bahasa</string>
+    <string name="fragment_settings_max_number">Angka maksimum untuk duel</string>
+    <string name="fragment_menu_university">Universitas Teknologi Rzeszów</string>
+    <string name="battle_view_bonus">Bonus berurutan +%d</string>
+    <string name="fragment_modes_instruction">Pilih latihan dari daftar:</string>
+    <string name="fragment_modes_add_sub">Penjumlahan dan Pengurangan</string>
+    <string name="fragment_modes_mul_div">Perkalian dan Pembagian</string>
+    <string name="fragment_modes_divisibility">Keterbagian</string>
+    <string name="fragment_modes_units">Konversi satuan</string>
+    <string name="fragment_modes_table">Tabel perkalian</string>
+    <string name="fragment_choose_player_instruction">Pilih pemain dari daftar\n atau buat yang baru dengan tombol tambah</string>
+    <string name="fragment_player_names_instruction">Masukkan nama panggilan pemain</string>
+    <string name="fragment_player_names_nickname_1">Nama panggilan Pemain1 (atas):</string>
+    <string name="fragment_player_names_nickname_2">Nama panggilan Pemain2 (bawah):</string>
+    <string name="fragment_player_names_start">Mulai</string>
+    <string name="fragment_scoreboard_empty">Daftar skor kosong.\nMainkan mode pertarungan untuk melihat hasil pemain terbaik!</string>
+    <string name="units_help_hint">Petunjuk</string>
+    <string name="settings_fragment_max_number">Nilai tidak boleh lebih besar dari: %1$d</string>
+    <string name="settings_fragment_min_number">Nilai tidak boleh lebih kecil dari: %1$d</string>
+    <string name="battle_game_ended">Permainan berakhir</string>
+    <string name="choose_player_input">Masukkan nama panggilan pemain baru:</string>
+    <string name="choose_player_nick_exist">Nama panggilan sudah ada!</string>
+    <string name="divisibility_difficulty_1">Mudah</string>
+    <string name="divisibility_difficulty_2">Sedang</string>
+    <string name="divisibility_difficulty_3">Sulit</string>
+    <string name="divisibility_difficulty_4">Sangat Sulit</string>
+    <string name="divisibility_question_p1">Apakah</string>
+    <string name="divisibility_question_p2">dapat dibagi oleh</string>
+    <string name="units_time">Waktu</string>
+    <string name="units_length">Panjang</string>
+    <string name="units_weight">Berat</string>
+    <string name="units_surface">Luas</string>
+    <string name="units_all">Semua</string>
+    <string name="time_units">hr,j,mnt,dtk</string>
+    <string name="question_mark" translatable="false">?</string>
+</resources>

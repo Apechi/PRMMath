@@ -74,6 +74,15 @@
             android:layout_marginHorizontal="10dp"/>
 
         <RadioButton
+            android:id="@+id/rb_Indonesia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Indonesia "
+            android:textSize="20sp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <RadioButton
             android:id="@+id/rb_French"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
