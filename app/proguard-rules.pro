@@ -20,4 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.hexbit.rutmath.data.model.**
+-keep class com.theprime.primemath.data.model.**
