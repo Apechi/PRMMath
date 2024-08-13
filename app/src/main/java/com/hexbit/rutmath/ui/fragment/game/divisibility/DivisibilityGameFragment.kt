@@ -148,8 +148,8 @@ class DivisibilityGameFragment : BaseFragment() {
     }
 
     private fun resetColors() = with(binding){
-        equationText.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
-        equationNumbers.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
+        equationText.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
+        equationNumbers.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
     }
 
     override fun onDestroy() {

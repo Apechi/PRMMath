@@ -108,6 +108,9 @@ class ChoosePlayerFragment : BaseFragment() {
         ) { dialog, _ ->
             dialog.dismiss()
         }
+
+        builder.setIcon(R.drawable.baseline_person_black_24)
+
         builder.show()
     }
 

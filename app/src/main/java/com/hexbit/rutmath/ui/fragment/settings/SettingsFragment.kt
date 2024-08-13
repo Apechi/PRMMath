@@ -57,15 +57,15 @@ class SettingsFragment() : BaseFragment() {
                 rbEnglish.id -> {
                     setPreviewText("en")
                 }
-                rbPolish.id -> {
-                    setPreviewText("pl")
-                }
-                rbFrench.id -> {
-                    setPreviewText("fr")
-                }
-                rbPortuguese.id -> {
-                    setPreviewText("pt")
-                }
+//                rbPolish.id -> {
+//                    setPreviewText("pl")
+//                }
+//                rbFrench.id -> {
+//                    setPreviewText("fr")
+//                }
+//                rbPortuguese.id -> {
+//                    setPreviewText("pt")
+//                }
                 rbIndonesia.id -> {
                     setPreviewText("in")
                 }
@@ -136,9 +136,9 @@ class SettingsFragment() : BaseFragment() {
     private fun changeLanguageChecked(language:String) = with(binding){
         when(language){
             "en" -> rbEnglish.isChecked = true
-            "pl" -> rbPolish.isChecked = true
-            "fr" -> rbFrench.isChecked = true
-            "pt" -> rbPortuguese.isChecked = true
+//            "pl" -> rbPolish.isChecked = true
+//            "fr" -> rbFrench.isChecked = true
+//            "pt" -> rbPortuguese.isChecked = true
             "in" -> rbIndonesia.isChecked = true
             else -> rbEnglish.isChecked = true
         }

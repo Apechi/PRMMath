@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     android:background="@drawable/bg_gradient"
     tools:context=".ui.fragment.MenuFragment">
 
@@ -29,6 +30,7 @@
         <LinearLayout
             android:id="@+id/addSubLayout"
             android:layout_width="300dp"
+            android:backgroundTint="@color/prime_blue"
             android:layout_height="100dp"
             android:background="@drawable/bg_in_tile_mode_dark"
             android:orientation="horizontal">
@@ -37,6 +39,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="@color/prime_blue_accent"
                 android:background="@drawable/bg_in_tile_mode_light"
                 android:scaleType="center"
                 android:src="@drawable/ic_add_sub" />
@@ -63,6 +66,7 @@
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:layout_marginTop="12dp"
+            android:backgroundTint="@color/prime_blue"
             android:background="@drawable/bg_in_tile_mode_dark"
             android:orientation="horizontal">
 
@@ -70,6 +74,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="@color/prime_blue_accent"
                 android:background="@drawable/bg_in_tile_mode_light"
                 android:scaleType="center"
                 android:src="@drawable/ic_mult_div" />
@@ -92,6 +97,7 @@
         <LinearLayout
             android:id="@+id/divisibilityLayout"
             android:layout_width="300dp"
+            android:backgroundTint="@color/prime_blue"
             android:layout_height="100dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/bg_in_tile_mode_dark"
@@ -101,6 +107,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="@color/prime_blue_accent"
                 android:background="@drawable/bg_in_tile_mode_light"
                 android:scaleType="center"
                 android:src="@drawable/ic_divisibility" />
@@ -121,6 +128,7 @@
 
         <LinearLayout
             android:id="@+id/unitsLayout"
+            android:backgroundTint="@color/prime_blue"
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:layout_marginTop="12dp"
@@ -131,6 +139,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="@color/prime_blue_accent"
                 android:background="@drawable/bg_in_tile_mode_light"
                 android:scaleType="center"
                 android:src="@drawable/ic_units" />
@@ -153,6 +162,7 @@
         <LinearLayout
             android:id="@+id/tableLayout"
             android:layout_width="300dp"
+            android:backgroundTint="@color/prime_blue"
             android:layout_height="100dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/bg_in_tile_mode_dark"
@@ -160,6 +170,7 @@
 
             <ImageView
                 android:layout_width="100dp"
+                android:backgroundTint="@color/prime_blue_accent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/bg_in_tile_mode_light"
@@ -192,6 +203,8 @@
         android:minLines="2"
         android:text="@string/fragment_modes_instruction"
         android:textSize="20sp"
+        android:textColor="@color/prime_blue"
+        android:fontFamily="sans-serif-condensed-medium"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"

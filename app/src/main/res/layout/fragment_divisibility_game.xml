@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     android:background="@drawable/bg_gradient"
     tools:context=".ui.fragment.game.normal.NormalGameFragment">
 
@@ -78,6 +79,7 @@
             android:textColor="@color/white"
             android:shadowColor="@color/green"
             android:shadowRadius="8"
+            android:backgroundTint="@color/green"
             android:background="@drawable/bg_in_button_yes"
             android:text="@string/yes" />
 
@@ -90,6 +92,7 @@
             android:layout_weight="1"
             android:textStyle="bold"
             android:textSize="38sp"
+            android:backgroundTint="@color/red"
             android:textColor="@color/white"
             android:shadowColor="@color/red"
             android:shadowRadius="8"

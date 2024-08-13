@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_margin="8dp"
+    android:theme="@style/Theme.MaterialComponents"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
 
     <LinearLayout
+        android:padding="8dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <ImageView
+            android:scaleX="3"
+            android:scaleY="3"
+            android:id="@+id/custom_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/dots_horizontal_512"
+            app:tint="@color/white" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,10 +38,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="1"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp"/>
 
             <Button
                 android:id="@+id/button2"
@@ -32,10 +50,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="2"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
 
             <Button
                 android:id="@+id/button3"
@@ -43,10 +62,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="3"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -60,10 +80,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="4"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
 
             <Button
                 android:id="@+id/button5"
@@ -71,10 +92,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="5"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
 
             <Button
                 android:id="@+id/button6"
@@ -82,10 +104,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="6"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
 
         </LinearLayout>
 
@@ -100,10 +123,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="7"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:radius="10dp" />
 
             <Button
                 android:id="@+id/button8"
@@ -111,10 +135,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="8"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
 
             <Button
                 android:id="@+id/button9"
@@ -122,10 +147,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="9"
                 android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:radius="10dp" />
 
         </LinearLayout>
 
@@ -139,7 +165,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:src="@drawable/ic_backspace_48dp"
                 android:layout_margin="5dp" />
 
@@ -149,10 +175,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:text="0"
                 android:textSize="24sp"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:radius="10dp" />
 
             <ImageButton
                 android:id="@+id/accept"
@@ -160,10 +187,11 @@
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@color/accent"
+                android:background="#508C9B"
                 android:src="@drawable/ic_send_48dp" />
 
         </LinearLayout>
 
     </LinearLayout>
-</LinearLayout>
+
+</androidx.cardview.widget.CardView>

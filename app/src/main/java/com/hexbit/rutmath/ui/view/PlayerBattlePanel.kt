@@ -96,7 +96,7 @@ class PlayerBattlePanel @JvmOverloads constructor(
         answersButtons.forEachIndexed { index, button ->
             button.text = answers[index].toString()
             lastSelectedButton?.background =
-                ColorDrawable(ContextCompat.getColor(context, R.color.accent))
+                ColorDrawable(ContextCompat.getColor(context, R.color.prime_blue_accent))
         }
         canAnswer = true
     }

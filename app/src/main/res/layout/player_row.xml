@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:background="@drawable/bg_in_transparent"
-    android:fadingEdge="horizontal"
-    android:orientation="horizontal"
-    android:padding="20dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:theme="@style/Theme.MaterialComponents"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    >
 
-    <TextView
-        android:id="@+id/nick"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/accent_text_dark"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:text="TextView" />
+        android:layout_margin="8dp"
 
-</RelativeLayout>
+        android:clipToPadding="false">
+
+        <TextView
+            android:drawablePadding="8dp"
+            android:id="@+id/nick"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/textview_background"
+            android:drawableEnd="@drawable/baseline_person_24"
+            tools:text="TextView" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

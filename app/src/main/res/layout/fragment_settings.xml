@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg_gradient"
-    android:layout_height="match_parent">
+    android:theme="@style/Theme.MaterialComponents"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/bg_gradient">
 
     <ImageView
         android:id="@+id/bgImage"
@@ -12,116 +15,113 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/bg_image" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/maxBattleModeNumberTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:text="@string/fragment_settings_max_number"
         android:textStyle="bold"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/maxBattleModeNumberLayout"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:textSize="26sp"
+        android:textColor="@color/prime_blue"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/maxBattleModeNumberLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/prime_blue"
+        android:textColorHint="@color/prime_blue"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maxBattleModeNumberTitle">
 
         <com.google.android.material.textfield.TextInputEditText
+
             android:id="@+id/maxBattleModeNumber"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accent_2"
             android:inputType="number"
             android:maxLength="3"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"/>
+            android:textColor="@color/prime_blue"
+            android:textSize="22sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/selectLanguageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/fragment_settings_select_language"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/maxBattleModeNumberLayout"
-        app:layout_constraintTop_toBottomOf="@+id/maxBattleModeNumberLayout" />
+        android:textColor="@color/prime_blue"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxBattleModeNumberLayout"
+        tools:ignore="MissingConstraints" />
 
     <RadioGroup
         android:id="@+id/rg_language"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectLanguageTitle">
 
-        <RadioButton
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:textColor="@color/prime_blue"
             android:id="@+id/rb_English"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="English "
-            android:textSize="20sp"
-            android:layout_marginHorizontal="10dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="English"
+            android:textSize="20sp"/>
 
-        <RadioButton
+        <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/rb_Indonesia"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="Indonesia "
-            android:textSize="20sp"
-            android:layout_marginHorizontal="10dp"/>
+            android:textColor="@color/prime_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Indonesia"
+            android:textSize="20sp"/>
 
-        <RadioButton
-            android:id="@+id/rb_French"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="Français "
-            android:textSize="20sp"
-            android:layout_marginHorizontal="10dp"/>
-
-        <RadioButton
-            android:id="@+id/rb_Polish"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="Polski "
-            android:textSize="20sp"
-            android:layout_marginHorizontal="10dp"/>
-
-        <RadioButton
-            android:id="@+id/rb_Portuguese"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"
-            android:text="Portuguese "
-            android:textSize="20sp"
-            android:layout_marginHorizontal="10dp"/>
+        <!-- Uncomment additional RadioButtons if needed -->
 
     </RadioGroup>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/save"
-        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="16dp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/prime_blue"
         android:paddingHorizontal="32dp"
-        android:paddingVertical="16dp"
+        android:paddingVertical="12dp"
         android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_language" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

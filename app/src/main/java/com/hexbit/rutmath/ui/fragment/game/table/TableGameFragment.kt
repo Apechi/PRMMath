@@ -159,8 +159,8 @@ class TableGameFragment : BaseFragment() {
     }
 
     private fun resetColors() = with(binding){
-        input.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
-        equation.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
+        input.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
+        equation.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
     }
     override fun onDestroy() {
         super.onDestroy()

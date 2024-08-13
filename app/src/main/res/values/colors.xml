@@ -9,7 +9,7 @@
     <color name="accent_stroke_dark">#cc8d52</color>
     <color name="accent_text">#F69A3D</color>
     <color name="accent_text_dark">#FC943C</color>
-    <color name="accent_disabled">#e4d2c1</color>
+    <color name="accent_disabled">#80818A</color>
     <color name="accent_2">#98A8CEE8</color>
 
     <color name="black_overlay">#66000000</color>
@@ -17,4 +17,7 @@
     <color name="red">#E83030</color>
     <color name="green">#22A322</color>
     <color name="gray_2_transparent">#4D788183</color>
+
+    <color name="prime_blue">#134B70</color>
+    <color name="prime_blue_accent">#508C9B</color>
 </resources>

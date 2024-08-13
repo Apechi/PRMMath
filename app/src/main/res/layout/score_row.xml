@@ -1,31 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="3dp"
-    android:background="#16000000"
-    android:elevation="2dp"
-    android:orientation="horizontal"
-    android:padding="15dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:theme="@style/Theme.MaterialComponents">
 
-    <TextView
-        android:id="@+id/nick"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/accent_text_dark"
-        android:textSize="17sp"
-        android:textStyle="bold"
-        tools:text="TextView" />
+        android:padding="15dp"
+        android:clipToPadding="false">
 
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@id/nick"
-        android:gravity="end"
-        android:textColor="@color/accent_text_dark"
-        android:textSize="17sp"
-        tools:text="TextView" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@drawable/textview_background"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/textview_background"
+            android:gravity="end"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

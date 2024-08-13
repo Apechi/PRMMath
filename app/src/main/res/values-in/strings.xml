@@ -49,4 +49,8 @@
     <string name="units_all">Semua</string>
     <string name="time_units">hr,j,mnt,dtk</string>
     <string name="question_mark" translatable="false">?</string>
+    <string name="playbtn">Latihan</string>
+    <string name="pvpbtn">PvP</string>
+    <string name="scoreboardmnu">Papan Skor</string>
+    <string name="settingmnu">Pengaturan</string>
 </resources>

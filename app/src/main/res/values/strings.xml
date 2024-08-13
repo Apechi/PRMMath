@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">RUTMath</string>
+    <string name="app_name" translatable="false">Prime Math</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="yes">Yes</string>
@@ -49,5 +49,11 @@
     <string name="units_all">All</string>
     <string name="time_units">d,h,min,sec</string>
     <string name="question_mark" translatable="false">?</string>
+    <string name="playbtn">Exercise</string>
+    <string name="pvpbtn">PvP</string>
+    <string name="scoreboardmnu">Scoreboard</string>
+    <string name="settingmnu">Settings</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="sdk_key_applovin" translatable="false">replace_your_key</string>
 
 </resources>

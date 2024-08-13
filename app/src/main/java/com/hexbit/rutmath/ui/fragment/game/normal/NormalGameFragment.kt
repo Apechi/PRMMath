@@ -198,8 +198,8 @@ class NormalGameFragment : BaseFragment() {
     }
 
     private fun resetColors() = with(binding) {
-        input.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
-        equation.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
+        input.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
+        equation.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
     }
 
     private fun drawGraphicRepresentation(activeEquation: Equation) = with(binding) {

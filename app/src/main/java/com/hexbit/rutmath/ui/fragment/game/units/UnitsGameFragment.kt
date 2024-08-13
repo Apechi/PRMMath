@@ -182,9 +182,9 @@ class UnitsGameFragment : BaseFragment() {
     }
 
     private fun resetColors() = with(binding){
-        input.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
-        equationP1.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
-        equationP2.setTextColor(ContextCompat.getColor(requireContext(), R.color.accent))
+        input.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
+        equationP1.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
+        equationP2.setTextColor(ContextCompat.getColor(requireContext(), R.color.prime_blue))
     }
 
     override fun onDestroy() {
