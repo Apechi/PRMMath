@@ -96,7 +96,7 @@ class UnitsGameFragment : BaseFragment() {
         })
 
         viewModel.getEndGameEvent().observe(viewLifecycleOwner, Observer { rate ->
-            AdsHelper.showInterstitial(requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
+            AdsHelper.showInterstitialPrime(requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
             findNavController().navigate(
                 UnitsGameFragmentDirections.actionUnitsGameFragmentToUnitsListFragment(
                     rate=rate,

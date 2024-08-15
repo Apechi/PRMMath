@@ -148,7 +148,7 @@ class BattleGameFragment : BaseFragment() {
                 args.player2nick,
                 player2Panel.getResult()
             )
-            AdsHelper.showInterstitial(requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
+            AdsHelper.showInterstitialPrime(requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
         }
         alert.show()
     }

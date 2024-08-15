@@ -110,7 +110,7 @@ class NormalGameFragment : BaseFragment() {
         })
 
         viewModel.getEndGameEvent().observe(viewLifecycleOwner, Observer { rate ->
-            AdsHelper.showInterstitial(requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
+            AdsHelper.showInterstitialPrime(requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
             when (args.exerciseType.operation){
                 Operation.PLUS, Operation.MINUS, Operation.PLUS_MINUS ->
                     findNavController().navigate(

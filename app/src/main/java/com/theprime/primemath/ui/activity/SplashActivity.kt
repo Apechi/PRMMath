@@ -27,9 +27,9 @@ class   SplashActivity : AppCompatActivity() {
             insets
         }
 
-        AdsHelper.initializeAds(this, BuildConfig.APPLICATION_ID, AdsConfig.Game_App_ID)
+        AdsHelper.initializeAdsPrime(this, BuildConfig.APPLICATION_ID, AdsConfig.Game_App_ID)
         if (BuildConfig.DEBUG) {
-            AdsHelper.debugMode(true)
+            AdsHelper.debugModePrime(true)
         }
         AdsData.getIDAds();
         OpenAds.LoadOpenAds(AdsConfig.Open_App_ID)
